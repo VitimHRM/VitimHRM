@@ -1,0 +1,36 @@
+// Função para verificar se uma pessoa é maior ou menor de idade
+function verificarMaiorIdade(idade) {
+    return idade >= 18 ? 'Maior de idade' : 'Menor de idade';
+}
+
+// Função para criar um array ordenado de 0 a 9
+function orderArray() {
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+
+// Função para retornar os dados de uma pessoa sem a idade
+function meusDados() {
+    let pessoa = {
+        nome: 'John Doe',
+        idade: '30',
+        cidade: 'New York'
+    };
+    delete pessoa.idade;
+    return pessoa;
+}
+
+// Função para manipular um array de animais e retornar várias informações
+function manipulaArray() {
+    let animais = ['cachorro', 'gato', 'abelha', 'rato', 'leão', 'galinha'];
+
+    return {
+        ordemAlfabetica: animais.sort(),
+        primeiro: animais[0],
+        ultimo: animais[animais.length - 1],
+        tamanhoDaLista: animais.length
+    };
+}
